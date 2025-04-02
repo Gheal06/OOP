@@ -5,7 +5,7 @@
 #define DNF FLT_MAX
 class Car{
 protected:
-    float fuel_capacity, fuel_consumption, average_speed[3];
+    float fuel_capacity, fuel_consumption, average_speed[3]; /// L, L/100km, km/h
     char brand[16];
 public:
     void PrintBrandName();

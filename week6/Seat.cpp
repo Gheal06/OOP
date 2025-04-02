@@ -9,7 +9,7 @@ Seat::Seat(){
 }
 float Seat::GetRaceTime(float len, Weather w){
     float t=len/this->average_speed[w]+6/3600.0; // startup time
-    if(t*this->fuel_consumption>this->fuel_capacity) return DNF;
+    if(len*fuel_consumption>this->fuel_capacity*100) return DNF;
     return t;
 }
 
